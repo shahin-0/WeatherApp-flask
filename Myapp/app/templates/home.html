@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    <div class="land-div">
+        <h1 id="land-title">ApiBoard</h1>
+    <h4 class="land-sub">You favorite Api App</h4>
+    <image src="{{url_for('static',filename = 'p1.svg')}}" id="p1"> </image>
+    <button class="land-but"><a id="but-text" href="{{ url_for('login') }}">Get started</a></button>
+    </div>
+
+
+{% endblock %}

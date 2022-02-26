@@ -1,0 +1,68 @@
+body{
+    font-family: "Nunito";
+}
+
+#nav-title{
+    margin-left: 220px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+#navbar{
+    background-color: #5161ce;
+
+}
+.nav-link{
+    color: white;
+}
+#nav-item1{
+    margin-left: 700px;
+}
+
+#land-title{
+    color: #6C63FF;
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: 140px;
+}
+
+.land-sub{
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 200px;
+    margin-top: -30px;
+}
+#p1{
+    margin-left: 800px;
+    width: 430px;
+    margin-top: -150px;
+}
+.land-but{
+    background-color: #6C63FF;
+    text-decoration: none;
+    height: 55px;
+    margin-top: -50px;
+    margin-left: 120px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+}
+
+#but-text{
+    color: white;
+    text-decoration: none;
+}
+
+#login-title{
+    color: #5161ce;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#reg{
+ color: white;
+    text-decoration: none;
+}
