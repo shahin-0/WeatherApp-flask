@@ -28,7 +28,7 @@ body{
 
 .land-sub{
     color: white;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px #6C63FF;
     font-size: 25px;
     font-weight: 300;
     margin-left: 200px;
@@ -60,9 +60,108 @@ body{
     font-weight: 600;
     font-size: 60px;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 520px;
 }
 #reg{
- color: white;
+    color: white;
     text-decoration: none;
+}
+
+.sub-but{
+    margin-top: 50px;
+    margin-left: 530px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.form-div{
+    width: 300px;
+    margin-left: 450px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+.label{
+    margin-left: 100px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#or{
+    margin-left: 570px;
+}
+
+.alt-button{
+    margin-left: 530px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.right{
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+#reg-title{
+    color: #5161ce;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: -20px;
+    margin-left: 530px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+#p2{
+    margin-left: -20px;
+    margin-top: -650px;
+    width: 430px;
+}
+
+.w-title{
+    margin-left: 450px;
+    margin-top: 100px;
+    color: #5161ce;
+    font-weight: 600;
+}
+.w-form{
+    width: 300px;
+}
+.w-div{
+    margin-top: 80px;
+    margin-left: 410px;
+}
+.w-body{
+    margin-top: 50px;
+    margin-left: 410px;
+}
+
+.p-title{
+    color: #5161ce;
+    font-weight: 600;
+    font-size: 80px;
+    margin-left: 400px;
+    margin-top: 60px;
+}
+
+.p-left{
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.p-sub{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#p3{
+    width: 480px;
+}
+
+#prod{
+    text-decoration: none;
+    color: white;
 }

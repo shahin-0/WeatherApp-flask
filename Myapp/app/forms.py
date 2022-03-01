@@ -10,7 +10,7 @@ class RegistraionForm(FlaskForm):
         if name:
             raise ValidationError("Username already exists.")
     username = StringField(validators=[InputRequired(), Length(min=4, max=20)], label='username')
-    email = StringField(validators=[InputRequired(), Length(min=4, max=30), Email()], label='email')
+    email = StringField(validators=[InputRequired(), Length(min=4, max=40), Email()], label='email')
     pass1 = PasswordField(validators=[InputRequired(), Length(min=6)], label='password1')
     pass2 = PasswordField(validators=[InputRequired(), Length(min=6), EqualTo("pass1")], label='password2')
     submit = SubmitField(label='submit')

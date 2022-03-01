@@ -3,15 +3,36 @@
 {% block title %} Signup {% endblock %}
 
 {% block content %}
+    <div class="right">
 
-<h1>Join</h1>
+    <h1 id="reg-title">Join</h1>
+
     <form method="POST" action="">
         {{ form.hidden_tag() }}
-        {{ form.username(placeholder="Username") }}
-        {{ form.email(placeholder="Email") }}
-        {{ form.pass1(placeholder="Password") }}
-        {{ form.pass2(placeholder="Password Again") }}
-        {{ form.submit }}
+      <div class="form-group form-div">
+        <label class="label2">Username</label>
+        {{ form.username(class="form-control") }}
+      </div>
+        <div class="form-group form-div">
+        <label class="label2">Email</label>
+        {{ form.email(class="form-control") }}
+      </div>
+       <div class="form-group form-div">
+        <label class="label2">Password</label>
+        {{ form.pass1(class="form-control") }}
+      </div>
+      <div class="form-group form-div">
+        <label class="label2"> Repeat Password</label>
+        {{ form.pass2(class="form-control") }}
+      </div>
+    {{ form.submit(class="btn btn-primary sub-but") }}
     </form>
+
+    <p id="or">-- or --</p>
+    <button class="btn btn-primary alt-button"><a href="{{ url_for('login') }}" id="reg">Login</a></button>
+    </div>
+    <div class="left">
+        <image src="{{url_for('static',filename = 'p2.svg')}}" id="p2"> </image>
+    </div>
 
 {% endblock %}

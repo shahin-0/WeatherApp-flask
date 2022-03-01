@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Weather {% endblock %}
+
+{% block content %}
+    <h2 class="w-title">Weather API</h2>
+    <form method="POST">
+        <div class="form-group w-div">
+            <label class="">Enter City Name</label>
+            <input name="city" class="form-control w-form">
+        </div>
+    </form>
+    {% if wth.city != "" %}
+        <div class="card w-body" style="width: 18rem;">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted"><img src="http://openweathermap.org/img/w/{{ wth.icon }}.png" alt="Image"></h6>
+                <h5 class="card-title">Name: {{ wth.city }}</h5>
+                <p class="card-text">Temperature: {{ wth.temperature }}</p>
+                <p class="card-text">Description: {{ wth.description }}</p>
+                <p class="card-text">Wind speed: {{ wth.wind }}</p>
+                <p class="card-text">Humidity: {{ wth.humidity }}</p>
+                <p class="card-text">Pressure: {{ wth.pressure }}</p>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

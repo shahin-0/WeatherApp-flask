@@ -6,9 +6,13 @@
 
     <div class="land-div">
         <h1 id="land-title">ApiBoard</h1>
-    <h4 class="land-sub">You favorite Api App</h4>
+    <h4 class="land-sub">Your favorite Api App</h4>
     <image src="{{url_for('static',filename = 'p1.svg')}}" id="p1"> </image>
-    <button class="land-but"><a id="but-text" href="{{ url_for('login') }}">Get started</a></button>
+        {% if current_user.is_authenticated %}
+            <button class="land-but"><a id="but-text" href="{{ url_for('product') }}">Get started</a></button>
+        {% else %}
+            <button class="land-but"><a id="but-text" href="{{ url_for('login') }}">Get started</a></button>
+        {% endif %}
     </div>
 
 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Product {% endblock %}
+
+{% block content %}
+    <h2 class="p-title">Our Products</h2>
+    <div class="p-left">
+        <h3 class="p-sub">Weather API</h3>
+        <p>Check here to find weather in you area with help of openweather api.</p>
+    </div>
+    <div class="p-right">
+        <image src="{{url_for('static',filename = 'p3.svg')}}" id="p3"> </image>
+    {% if current_user.is_authenticated %}
+                <button class="btn btn-primary alt-button"><a href="{{ url_for('weather') }}" id="prod">Go</a></button>
+        {% else %}
+            <button class="btn btn-primary alt-button"><a href="{{ url_for('login') }}" id="prod">Go</a></button>
+        {% endif %}
+    </div>
+{% endblock %}
